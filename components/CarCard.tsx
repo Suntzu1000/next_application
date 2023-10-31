@@ -28,9 +28,9 @@ const CarCard = ({ car }: CarCardProps) => {
       </div>
 
       <p className='flex mt-6 text-[32px] leading-[38px] font-extrabold'>
-        <span className='self-start text-[14px] leading-[17px] font-semibold'>$</span>
+        <span className='self-start text-[14px] leading-[17px] font-semibold'>R$</span>
         {carRent}
-        <span className='self-end text-[14px] leading-[17px] font-medium'>/day</span>
+        <span className='self-end text-[14px] leading-[17px] font-medium'>/dia</span>
       </p>
 
       <div className='relative w-full h-40 my-3 object-contain'>
@@ -42,7 +42,7 @@ const CarCard = ({ car }: CarCardProps) => {
           <div className='flex flex-col justify-center items-center gap-2'>
             <Image src='/steering-wheel.svg' width={20} height={20} alt='steering wheel' />
             <p className='text-[14px] leading-[17px]'>
-              {transmission === "a" ? "Automatic" : "Manual"}
+              {transmission === "a" ? "Automatico" : "Manual"}
             </p>
           </div>
           <div className="car-card__icon">
@@ -51,7 +51,7 @@ const CarCard = ({ car }: CarCardProps) => {
           </div>
           <div className="car-card__icon">
             <Image src="/gas.svg" width={20} height={20} alt="seat" />
-            <p className="car-card__icon-text">{city_mpg} MPG</p>
+            <p className="car-card__icon-text">{city_mpg} KMG</p>
           </div>
         </div>
 
